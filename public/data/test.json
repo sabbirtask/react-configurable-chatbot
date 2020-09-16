@@ -1,0 +1,90 @@
+{
+  "botName": "Cassandra",
+  "avatarURL": "https://www.iconfinder.com/data/icons/avatars-1-5/136/84-512.png",
+  "logic": [
+    {
+      "name": "maker",
+      "keywords": ["creator", "who made you", "contact info", "contact information", "email", "e-mail"],
+      "widget": "linkedList",
+      "widgetName": "makerLinkList",
+      "response": {
+        "message": "I am created by Chester Militante using react-chatbot-kit made by Fredrik Strand Oseberg",
+        "links": [
+          {
+            "name": "Chester Militante",
+            "href": "https://github.com/chinsel/"
+          },
+          {
+            "name": "Fredrik Strand Oseberg",
+            "href": "https://www.npmjs.com/~foseberg"
+          }
+        ]
+      }
+    },
+    {
+      "name": "configuration",
+      "keywords": ["configuration options", "config options", "chatbot options", "chatbot configuration"],
+      "widget": "link",
+      "widgetName": "configurationLink",
+      "response": {
+        "message": "Please visit the repo's README below",
+        "links": [
+          {
+            "name": "react-configurable-chatbot",
+            "href": "https://github.com/chinsel/react-configurable-chatbot"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cuss",
+      "keywords": ["fuck", "bullshit", "piss off", "dick", "asshole", "bitch", "bastard", "cunt", "bollocks", "bugger", "hell", "choad", "crikey", "rubbish", "wanker", "piss", "twat", "suck", "cock"],
+      "widget": "",
+      "widgetName": "",
+      "response": {
+        "message": "Please don't be mean to me. I am just a bot that want to help you. Is there something else you want to ask?",
+        "links": []
+      }
+    },
+    {
+      "name": "author",
+      "keywords": ["chester", "militante"],
+      "widget": "linkedList",
+      "widgetName": "authorLinkList",
+      "response": {
+        "message": "Chester Militante is a great person who made me and along with Fredrik Strand Oseberg",
+        "links": [
+          {
+            "name": "Chester Militante",
+            "href": "https://github.com/chinsel/"
+          },
+          {
+            "name": "Fredrik Strand Oseberg",
+            "href": "https://www.npmjs.com/~foseberg"
+          }
+        ]
+      }
+    }
+  ],
+  "defaultResponse": "Unfortunately, I don't have any information about that. Is there something else you want to ask?",
+  "initialMessage": {
+    "name": "initial",
+    "widget": "linkedList",
+    "widgetName": "initLinkedList",
+    "message": "Hi! How can I help you? You might be interested on the following links below.",
+    "links": [
+      {
+        "name": "Lifehacker",
+        "href": "https://www.lifehacker.com/"
+      },
+      {
+        "name": "Facebook",
+        "href": "https://www.facebook.com"
+      },
+      {
+        "name": "Mazda",
+        "href": "https://www.mazdausa.com"
+      }
+    ]
+  }
+}
