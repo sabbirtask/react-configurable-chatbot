@@ -37,8 +37,7 @@
     ]
   },
   "dependencies": {
-    "react-chatbot-kit": "^1.0.6",
-    "uuid": "^8.3.0"
+    "react-chatbot-kit": "^1.0.6"
   },
   "peerDependencies": {
     "prop-types": ">=15",

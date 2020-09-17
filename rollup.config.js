@@ -25,6 +25,5 @@ export default formats.map((format) => ({
     "react-dom",
     "styled-components",
     "react-chatbot-kit",
-    "uuid",
   ],
 }));
