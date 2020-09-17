@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StyledWrapper, StyledLink } from "./styles";
 
-const renderLink = (link) => (
-  <StyledLink key={link.name} to={link.href} name={link.name} />
+const renderLink = ({ name, href }) => (
+  <StyledLink key={name} to={href} name={name} />
 );
 
 const LinkedList = ({ links, ...props }) => (
