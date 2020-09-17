@@ -43,13 +43,13 @@ The Chatbot component has the following props:
 
 ### Adding/Modifying Bot Logic (Keywords and Responses)
 
-This chatbot requires fetching a JSON file endpoint. Edit that JSON to add logic. See JSON examples in /public/data/test.json file under `logic` key.
+This chatbot requires fetching a JSON file endpoint. Edit that JSON to add logic. See JSON examples in [test.json](https://github.com/chinsel/react-configurable-chatbot/blob/master/public/data/test.json) file under `logic` key.
 
 ### Changing Bot Name
-The bot name can be provided in the JSON file as a string. See JSON examples in /public/data/test.json file under `botName` key. If not provided, the default name will be `Bot`.
+The bot name can be provided in the JSON file as a string. See JSON examples in [test.json](https://github.com/chinsel/react-configurable-chatbot/blob/master/public/data/test.json) file under `botName` key. If not provided, the default name will be `Bot`.
 
 ### Changing Bot Avatar Icon
-The bot avatar icon can be provided in the JSON file as a URL to the image. See JSON examples in /public/data/test.json file under `avatarURL` key. If not provided, the default icon will be the React logo `logo192.png` in /public.
+The bot avatar icon can be provided in the JSON file as a URL to the image. See JSON examples in [test.json](https://github.com/chinsel/react-configurable-chatbot/blob/master/public/data/test.json) file under `avatarURL` key. If not provided, the default icon will be the React logo `logo192.png` in /public.
 
 ## Troubleshooting
 
