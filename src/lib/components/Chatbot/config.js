@@ -14,11 +14,9 @@ const config = ({
 }) => {
   const linkWidgets = logic
     .filter(({ widget }) => widget === "link")
-    .map(({ widgetName, response: { links } }) => ({
+    .map(({ widgetName, response: { links: [{ name, href }] } }) => ({
       widgetName,
-      widgetFunc: (props) => (
-        <Link name={links[0].name} to={links[0].href} {...props} />
-      ),
+      widgetFunc: (props) => <Link name={name} to={href} {...props} />,
     }));
 
   const linkedListWidgets = logic
