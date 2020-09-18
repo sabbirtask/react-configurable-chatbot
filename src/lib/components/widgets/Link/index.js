@@ -1,25 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
-
-const StyledWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-`;
-
-const StyledLink = styled.a`
-  font-family: Arial;
-  text-decoration: none;
-  color: #026cdf;
-  padding: 8px;
-  border: 1px solid #026cdf;
-  border-radius: 8px;
-
-  &:hover {
-    background-color: rgb(214, 231, 250);
-  }
-`;
+import { StyledWrapper, StyledLink } from "./styles";
 
 const Link = ({ name, rel, target, to, ...props }) => (
   <StyledWrapper {...props}>

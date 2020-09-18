@@ -12,6 +12,16 @@ class ActionProvider {
     this.setChatbotMessage(message);
   };
 
+  handleOptions = (msg, widgetName) => {
+    const message = this.createChatBotMessage(msg, {
+      widget: widgetName,
+      loading: true,
+      terminateLoading: true,
+      withAvatar: true,
+    });
+    this.setChatbotMessage(message);
+  };
+
   handleDefault = (msg) => {
     const message = this.createChatBotMessage(msg);
     this.setChatbotMessage(message);

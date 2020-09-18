@@ -2,8 +2,8 @@
 import React from "react";
 import { createChatBotMessage } from "react-chatbot-kit";
 import { StyledAvatar } from "./styles";
-import Link from "../widgets/Link";
-import LinkedList from "../widgets/LinkedList";
+import Links from "../widgets/Links";
+import Options from "../widgets/Options";
 
 const config = ({
   defaultResponse,
@@ -12,25 +12,19 @@ const config = ({
   botName = "Bot",
   avatarURL = "/logo192.png",
 }) => {
-  const linkWidgets = logic
-    .filter(({ widget }) => widget === "link")
-    .map(({ widgetName, response: { links: [{ name, href }] } }) => ({
-      widgetName,
-      widgetFunc: (props) => <Link name={name} to={href} {...props} />,
-    }));
-
-  const linkedListWidgets = logic
-    .filter(({ widget }) => widget === "linkedList")
+  const linksWidgets = logic
+    .filter(({ widget }) => widget === "links")
     .map(({ widgetName, response: { links } }) => ({
       widgetName,
-      widgetFunc: (props) => <LinkedList {...props} links={links} />,
+      widgetFunc: (props) => <Links {...props} links={links} />,
     }));
 
   const initWidget = {
     widgetName: initialMessage.widgetName,
     widgetFunc: (props) => (
-      <LinkedList {...props} links={initialMessage.links} />
+      <Options {...props} options={initialMessage.options} />
     ),
+    mapStateToProps: ["logic"],
   };
 
   return {
@@ -57,7 +51,7 @@ const config = ({
       defaultResponse,
       logic,
     },
-    widgets: [initWidget, ...linkWidgets, ...linkedListWidgets],
+    widgets: [initWidget, ...linksWidgets],
   };
 };
 

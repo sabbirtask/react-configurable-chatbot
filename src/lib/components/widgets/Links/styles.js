@@ -10,8 +10,4 @@ export const StyledLink = styled(Link)`
   margin: 0 6px 6px 0;
   justify-content: flex-start;
   font-size: 14px;
-
-  a {
-    border-radius: 16px;
-  }
 `;
