@@ -1,6 +1,6 @@
 {
   "name": "react-configurable-chatbot",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Based on React Chatbot Kit, I have coded certain keywords to trigger a specific response coming from a JSON endpoint. This package relies on the react, prop-types,and styled-components peer-dependency packages to be already installed and set up in your project.",
   "author": "Chester Militante <chester.militante@gmail.com>",
   "license": "MIT",
