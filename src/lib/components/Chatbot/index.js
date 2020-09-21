@@ -24,12 +24,12 @@ class Chatbot extends Component {
   state = {
     hasDecided: false,
     logic: {},
-    // eslint-disable-next-line react/destructuring-assignment
-    toggle: this.props.isOpenDefault,
+    toggle: false,
   };
 
   componentDidMount() {
-    const { jsonData } = this.props;
+    const { isOpenDefault, jsonData } = this.props;
+    this.setState({ toggle: isOpenDefault });
     this.fetchData(jsonData);
   }
 
